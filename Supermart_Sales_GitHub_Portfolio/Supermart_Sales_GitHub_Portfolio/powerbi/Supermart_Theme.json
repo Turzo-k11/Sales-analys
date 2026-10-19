@@ -1,0 +1,41 @@
+{
+  "name": "Supermart Sales | Midnight Blue",
+  "dataColors": [
+    "#2563EB",
+    "#0EA5A4",
+    "#F59E0B",
+    "#8B5CF6",
+    "#EF4444",
+    "#14B8A6",
+    "#64748B",
+    "#F97316"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#17253D",
+  "tableAccent": "#2563EB",
+  "good": "#14866D",
+  "neutral": "#F59E0B",
+  "bad": "#DC2626",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 16,
+      "color": "#17253D"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#17253D"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#506078"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 24,
+      "color": "#17253D"
+    }
+  }
+}
