@@ -1,0 +1,35 @@
+// Create these as NEW MEASURES in table SupermartGrocerySales (Modeling > New measure).
+// Each assignment below is a separate DAX measure; do not paste all at once.
+
+Total Sales =
+SUM('SupermartGrocerySales'[Sales])
+
+Total Profit =
+SUM('SupermartGrocerySales'[Profit])
+
+Profit Margin % =
+DIVIDE([Total Profit], [Total Sales])
+
+Total Orders =
+DISTINCTCOUNT('SupermartGrocerySales'[Order ID])
+
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+Average Discount % =
+AVERAGE('SupermartGrocerySales'[Discount])
+
+Total Customers =
+DISTINCTCOUNT('SupermartGrocerySales'[Customer Name])
+
+Sales Previous Year =
+CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Calendar'[Date]))
+
+Sales YoY % =
+DIVIDE([Total Sales] - [Sales Previous Year], [Sales Previous Year])
+
+Profit Previous Year =
+CALCULATE([Total Profit], SAMEPERIODLASTYEAR('Calendar'[Date]))
+
+Profit YoY % =
+DIVIDE([Total Profit] - [Profit Previous Year], [Profit Previous Year])
